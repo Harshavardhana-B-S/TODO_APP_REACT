@@ -1,0 +1,222 @@
+:root {
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.showTodo {
+  padding: 0px;
+}
+
+.showTodo button {
+  margin-left: 15px;
+}
+
+.status {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid #0d6efd;
+  border-radius: 5px;
+  color: #0d6efd;
+  font-size: 14px;
+}
+
+.updateBTN {
+  padding: 8px 10px;
+  background-color: transparent;
+  border: 1px solid #0dcaf0;
+  border-radius: 5px;
+  color: #0dcaf0;
+  font-size: 14px;
+}
+
+.removeBTN {
+  padding: 8px 10px;
+  background-color: transparent;
+  border: 1px solid rgb(120, 118, 118);
+  border-radius: 5px;
+  color: rgb(159, 153, 153);
+  font-size: 14px;
+}
+
+.todoConatiner {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.todoConatiner table {
+  /* border: 1px solid black; */
+  width: 800px;
+  margin-top: 50px;
+  /* background-color: #f9f8fa; */
+}
+
+.todoConatiner table th {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  font-family: var(--bs-font-sans-serif);
+  background-color: #f9f8fa;
+}
+
+.todoConatiner table td {
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: var(--bs-font-sans-serif);
+  font-weight: 400;
+  margin-top: 15px;
+  border-bottom: 2px solid rgb(236, 233, 239);
+}
+
+.todoConatiner table tr {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.todoBox1 {
+  /* border: 1px solid blue; */
+  margin-top: 50px;
+}
+
+.todoBox1 h1 {
+  color: #0d6efd;
+  font-size: calc(1.375rem + 1.5vw);
+  font-family: var(--bs-font-sans-serif);
+}
+
+.todoBox1 p {
+  color: #6c757d;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.inputBox input {
+  padding: 15px 16px;
+  width: 250px;
+  background-color: transparent;
+  border: 1px solid #0dcaf0;
+  border-radius: 0.3rem;
+}
+
+.inputBox input:focus {
+  outline: none;
+}
+
+.inputBox button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px solid #0dcaf0;
+  color: #0dcaf0;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: center;
+}
+
+.popupBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+.popup {
+  border: 1px solid #0d6efd;
+  margin: 0 auto;
+  /* width: 300px;
+  padding: 10px; */
+  width: 498.67px;
+  height: 218px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--bs-font-sans-serif);
+  /* border-radius: 1rem; */
+  border-radius: 4.8px;
+
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  color: white;
+}
+
+.popup h2 {
+  margin-top: 15px;
+  text-align: left;
+  margin-left: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #0d6efd;
+}
+
+.popup form label {
+  float: left;
+  margin-left: 10px;
+  margin-top: 35px;
+  font-size: 18px;
+  color: #0d6efd;
+}
+.hr {
+  border-top: 1px solid #0d6efd;
+}
+.popup input {
+  width: 350px;
+  padding: 10px 10px;
+  margin-left: -12px;
+  margin-top: 30px;
+  border: 1px solid #0d6efd;
+  border-radius: 0.3rem;
+}
+
+.popup input:focus {
+  outline: none;
+}
+.saveBtn {
+  background-color: #0d6efd;
+  margin-right: -270px;
+}
+
+.closeBtn {
+  background-color: grey;
+  margin: 20px;
+}
+
+.activeStatus {
+  border: 1px solid red;
+  color: red;
+}
+
+.completedStatus {
+  border: 1px solid green;
+  color: green;
+}
