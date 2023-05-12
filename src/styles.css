@@ -18,12 +18,16 @@
 }
 
 .status {
-  padding: 10px 15px;
+  padding: 5px 10px;
   background-color: transparent;
   border: 1px solid #0d6efd;
   border-radius: 5px;
   color: #0d6efd;
   font-size: 14px;
+}
+
+.status :focus{
+  outline: none;
 }
 
 .updateBTN {
@@ -220,3 +224,78 @@
   border: 1px solid green;
   color: green;
 }
+
+.forSmallDisplay{
+  display: none;
+}
+
+
+@media only screen and (max-width: 470px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .forLarge{
+    display: none;
+  }
+  .forSmallDisplay{
+    display: block;
+  }
+  
+  /* .todoBox1 {
+    border: 1px solid red;
+   }  */
+  .inputBox{
+    width: 400px;
+   /* border: 1px solid blue; */
+  }
+  .inputBox input{
+    width: 50%;
+  }
+  .todoBox2 table{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  .status {
+    /* padding: 8px 10px; */
+    /* width: 80%; */
+    background-color: transparent;
+    border: 1px solid #0d6efd;
+    border-radius: 5px;
+    color: #0d6efd;
+    font-size: 12px;
+  }
+  .activeStatus {
+    border: 1px solid red;
+    color: red;
+  }
+  
+  .completedStatus {
+    border: 1px solid green;
+    color: green;
+  }
+
+.popup{
+  width: 80%;
+}
+.popup input {
+  width: 190px;
+  margin-left: 5px;
+}
+
+.saveBtn {
+  background-color: #0d6efd;
+  margin-right: -110px;
+}
+
+.closeBtn {
+  background-color: grey;
+  margin: 20px;
+}
+
+
+}
+

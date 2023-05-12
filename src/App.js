@@ -74,14 +74,27 @@ const App = () => {
     // console.log(newTodo)
   };
 
+  
+
   //Handle Status Task
+  // const windowWidth=window.innerWidth;
   const handleStatusTask = (taskID) => {
     const newTodo = todos.map((todo) => {
       if (todo.id === taskID) {
-        return {
-          ...todo,
-          isCompleted: todo.isCompleted === "TODO" ? "ACTIVE" : "COMPLETED"
-        };
+          // let isCompleted;
+          // if (windowWidth <= 470) {
+          //   isCompleted = todo.isCompleted === "TODO" ? "ACTIVE" : "DONE";
+          // } else {
+          //   isCompleted = todo.isCompleted === "TODO" ? "ACTIVE" : "COMPLETED";
+          // }
+         
+       
+          return {
+            ...todo,
+            isCompleted: todo.isCompleted === "TODO" ? "ACTIVE" : "COMPLETED"
+          };
+          
+        
       }
       return todo;
     });

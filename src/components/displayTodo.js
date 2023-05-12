@@ -23,20 +23,31 @@ const DisplayTodo = ({
               <tr key={index}>
                 <td>{todo.id}</td>
                 <td>{todo.task}</td>
+
                 <td>
+ < form>
+  <select
+   className={`status ${todo.isCompleted === "TODO"? "todoStatus": todo.isCompleted === "ACTIVE"? "activeStatus": todo.isCompleted==="COMPLETED"? "completedStatus" : "doneStatus"
+  }`}
+    value={todo.isCompleted}
+    onChange={(e) => handleStatusTask(todo.id, e.target.value)}
+  >
+    <option value="TODO">TODO</option>
+    <option value="ACTIVE">ACTIVE</option>
+    <option value="COMPLETED">COMPLETED</option>
+  </select>
+  </form>
+</td>
+
+                {/* <td>
                   <button
-                    className={`status ${
-                      todo.isCompleted === "TODO"
-                        ? "todoStatus"
-                        : todo.isCompleted === "ACTIVE"
-                        ? "activeStatus"
-                        : "completedStatus"
+                    className={`status ${todo.isCompleted === "TODO"? "todoStatus": todo.isCompleted === "ACTIVE"? "activeStatus": todo.isCompleted==="COMPLETED"? "completedStatus" : "doneStatus"
                     }`}
                     onClick={() => handleStatusTask(todo.id)}
                   >
                     {todo.isCompleted}
                   </button>
-                </td>
+                </td> */}
 
                 <td>
                   <button
