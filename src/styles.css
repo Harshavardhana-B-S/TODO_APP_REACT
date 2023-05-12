@@ -282,8 +282,17 @@
   width: 80%;
 }
 .popup input {
-  width: 190px;
-  margin-left: 5px;
+  width: 220px;
+ margin: 0 auto;
+ margin-top: 5px;
+}
+
+.popup form label{
+  float: none;
+  margin: 0 auto;
+}
+.popup button {
+  margin-top: 10px;
 }
 
 .saveBtn {
